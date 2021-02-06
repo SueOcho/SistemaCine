@@ -1,0 +1,17 @@
+USE [isil2021]
+GO
+/****** Object:  StoredProcedure [dbo].[pa_insertar]    Script Date: 5/02/2021 23:25:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[pa_insertar](
+@vusuario varchar(20),
+@vclave varchar(20),
+@vtipo varchar(20),
+@vestado int
+)
+as
+begin
+INSERT INTO usuario(usuario,clave,tipo,estado) VALUES(@vusuario,@vclave,@vtipo,@vestado)
+end

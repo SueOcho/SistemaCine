@@ -1,0 +1,32 @@
+@import "../globals/global";
+@import "../globals/mediaqueries";
+
+.form {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  padding: 140px 0 70px 0;
+  width: 100%;
+  form {
+    margin: 0 auto;
+    width: 85%;
+    @include tablet768 {
+      width: 420px;
+    }
+    h2 {
+      color: $font-primary;
+      font-weight: $font-black;
+      text-align: center;
+    }
+    .form-group {
+      label {
+        color: $font-primary;
+        font-weight: 700;
+      }
+    }
+    button {
+      &.btn-primary {
+        width: 100%;
+      }
+    }
+  }
+}
